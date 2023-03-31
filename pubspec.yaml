@@ -23,7 +23,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  flutlab_logcat:
+    git: https://github.com/FlutLab/flutlab-logcat.git
+  
   http: ^0.13.3
 
   shared_preferences: ^2.0.6

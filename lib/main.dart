@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:waspos/pages/app.dart';
+import 'package:flutlab_logcat/flutlab_logcat.dart';
 
-void main() async {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await FlutLabLogcat.init();
   // Run the application
   runApp(MyApp());
 }
